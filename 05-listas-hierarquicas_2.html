@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas hierárquicas</title>
+</head>
+<body>
+    <h1>Cursos da Fatec Franca</h1>
+
+    <!--Lista não ordenada, com quadradinhos-->
+    <ul type="square">
+        <li>Análise e Des Sistema</li>
+        <!--Dentro de um item de lista (<li>), podem ser colocadas outras listas, ordenadas ou não ordenadas-->
+
+        <li>
+            Desenvolvimento de <em>Software</em> Multiplataforma
+            <!--Lista ordenada-->
+            <ol>
+                <li>
+                    semestre
+                    <!--Lista não ordenada, com circulos-->
+                    <ol type="I">
+                        <li>Algoritnmo e Lógica de Progr</li>
+                        <li>Desenvolvimento Web</li>
+                        <li>Modelagem de Banco de Dados</li>
+                        <li>Sistemas Operacionais</li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </li>
+                <li>
+                    Semestre
+                     <!-- O atributo start permite começar a lista a aprtir de um numero diferente de 1-->
+                    <ol type="I" start="7">
+                        <li>Modelagem de BD</li>
+                        <li>BD Relacional</li>
+                        <li>Algoritmo e Logica Prog</li>
+                        <li>Engenharia de <em>Software</em></li>
+                        <li>Desenvolvimento Web</li>
+                        <li></li>
+                    </ol>
+                </li>
+                <li>
+                    Semestre
+                    <ol start="13">
+                        <li>Tecnica de Programação I</li>
+                        <li>Tecnica de Programação II</li>
+                        <li>Estrutura de Dados</li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </li>
+                <li>
+                    Semestre
+                    <ol start="20">
+                        <li>BD não Relacional</li>
+                        <li>Desenvolvimento Web III</li>
+                        <li>Gestão Ágil de Projetos de Software</li>
+                        <li>SO e Redes de Comp</li>
+                    </ol>
+                </li>
+                <li>
+                    Semestre
+                    <ol start="34">
+                        <li>Interação Humano Computador</li>
+                        <li>Experiencia do Usuário</li>
+                        <li>Banco de Dados Relacional</li>
+                        <li>Banco de Dados não relacional</li>
+                        <li>Internet das Coisas e Aplicações</li>
+
+                    </ol>
+                </li>
+                <li>
+                    Semestre
+                    <ol start="34">
+                        <li>Mineração de Dados</li>
+                        <li>Lab Des Multiplataforma</li>
+                        <li>Qualidade e Teste de <em>Softwarwe</em></li>
+                        <li>Processamento e Linguagem Natural</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        
+    
+</body>
+</html>
