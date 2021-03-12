@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /* Regras iniciadas com # se aplicam ao elemento com o id de mesmo nome */
+        #logo {
+            width: 100%; /*A imagem ocupará 100% da largura disponível*/
+            max-width: 360px; /* Largura máxima em pixels */
+            min-width: 100px; /* Largura mínima em pixels */
+        }
+        figcaption{
+            font-family: Calibri, Arial, sans;
+            font-style: italic;  
+        }
+        figure {
+            text-align: center;
+             background-image: url("img/light-carbonfiber.png");
+        }
+        body {
+            /* Imagem de fundo da página
+                Por padrão a imagem se repete automaticamente para cobrir todo o fundo
+            */
+            background-image: url("img/metal.jpg");
+            /*background-repeat: no-repeat;*/
+            /* Faz a imagem não se repetir*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Atributos da tag <img> (imagem)
+        src (source) - o caminho para o arquivo de imagem que será exibido
+        alt (texto alternativo) - Um texto qu eserá exibido no lugar da imagem caso o respectivo arquivo não seja encontrado.    
+    -->
+    <img id="logo"src="img/apptiva-logo.png" alt="Logotipo da empresa Apptiva">
+
+    <!-- <figure>: apara quando a imagens precisam de legenda-->
+    <figure>
+        <img src="img/distance-education-1000px.jpg" alt="Educação a Distância"
+        title="Venha estudar conosco!">
+        <!--Legenda da Imagem (semântico). POde vir ante ou depois do <img>-->
+        <figcaption>A Apptiva oferece as melhores tecnologias para Educação a Distância. Faça como essa nossa aluna!</figcaption>
+    </figure>
+
+    <!--Regras de CSS também podem ser atribuidas a um elemento por meio do atributo style-->
+    <img style="width: 50%; border: 10x solid blue" src= "img/svg-logo.svg" alt="Logotipo do formato SVG">
+</body>
+</html>
